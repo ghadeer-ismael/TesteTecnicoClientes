@@ -108,7 +108,10 @@ namespace Clientes.API
                 app.UseDeveloperExceptionPage();
             }
 
+            //Criar o Swagger da API
             app.UseSwagger();
+
+            // Configurar a tela do Swagger da API
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint($"/swagger/v1/swagger.json", "API - Teste Cliente v1");
